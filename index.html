@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title> MAKY KAY </title>
+    <link rel="icon" type="image/png" href="./images/icon/fa.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&amp;subset=korean" rel="stylesheet">	
+    <link rel="stylesheet" href="css/layot.css">	
+    <link rel="stylesheet" href="css/main_style.css"/>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/hover.js"></script>
+	<script type="text/javascript" src="js/tab_story.js"></script>
+	<script type="text/javascript" src="js/tab_product.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <!--        top dowm 영역-->
+        <aside id="btn_warp">
+            <ul class="top_down">
+                <li class="top_btn">
+                    <a href="#" > Top <i class="far fa-arrow-alt-circle-up"></i></a>
+                </li>
+                <li class="down_btn">
+                    <a href="#" > Down <i class="far fa-arrow-alt-circle-down"></i></a>
+                </li>
+            </ul>            
+        </aside>
+       <!--        //top dowm 영역-->       
+        
+        <!--Header영역-->
+        <header>
+            <div class="logo">
+                <a href="index.html" title="홈으로"><h2><img src="./images/Marykay_logo.png" alt="logo"></h2></a>
+            </div>
+            <nav>
+                <ul class="gnb">
+                    <li class="gnb_list">
+                        <a href="login.html" title="로그인"><img src="./images/icon/user.png" alt="로그인하기"></a>
+                    </li>
+                    <li class="gnb_list">
+                        <a href="#" title="장바구니"><img src="./images/icon/basket.png" alt="장바구니보기"></a>
+                    </li>
+                    <li class="gnb_list">
+                        <a href="#" title="검색"><img class="search_click" src="./images/icon/search.png" alt="검색하기"></a>
+                    </li>
+                </ul>
+                <div id="main_nav">
+                    <ul class="main_menu">
+                        <li>
+                            <a href="story.html" title="브랜드 스토리 보러가기" class="txt_ov txt1">브랜드스토리</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="product.html" title="기능별제품 보러가기" class="txt_ov txt2">제품</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="E-Beauty.html" title="E-뷰티가기" class="txt_ov txt3">E-뷰티</a>
+                            <span class="line"></span>     
+                        </li>
+                        <li>
+                            <a href="Community.html" title="커뮤니티가기" class="txt_ov txt4">커뮤니티</a>
+                            <span class="line"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="sub">
+                    <div id="sub_menu">
+                        <ul class="menu">
+                            <li><a href="story.html?#brand_story" title="브랜드 스토리 보러가기">브랜드소개</a></li>
+                            <li><a href="story.html?#brand_campaign" title="브랜드캠페인 보러가기">브랜드캠페인</a></li>
+                            <li><a href="story.html?#social_contribution" title="사회공헌 보러가기">사회공헌</a></li>
+                            <li><a href="story.html?#promise" title="7가지약속 보러가기">7가지약속</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li><a href="product.html?#skincare" title="스킨케어 보러가기">스킨케어</a></li>
+                            <li><a href="product.html?#suncare" title="선케어 보러가기">선 케어</a></li>
+                            <li><a href="product.html?#makeup" title="메이크업 보러가기">메이크업</a></li>
+                            <li><a href="product.html?#makeuptool" title="화장품도구 보러가기">화장품도구</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li><a href="E-Beauty.html?#makeup_over" title="메이크오버 보러가기">메이크오버</a></li>
+                            <li><a href="E-Beauty.html?#makeup_looks" title="메이크업 룩 보러가기">메이크업 룩</a></li>
+                            <li><a href="E-Beauty.html?#makeup_tip" title="메이크업 팁 보러가기">메이크업 팁</a></li>
+                            <li><a href="E-Beauty.html?#thebook" title="e-카달로그 보러가기">e-카달로그</a></li> 
+                        </ul>
+                        <ul class="menu">
+                            <li><a href="Community.html?#event" title="이벤트 스토리 보러가기">이벤트</a></li>
+                            <li><a href="Community.html?#notice" title="공지사항 보러가기">공지사항</a></li>
+                            <li><a href="Community.html?#beautyclass" title="뷰티클래스 보러가기">뷰티클래스</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li class="menu_img"><a href="#" title="보러가기"><img src="./images/menu/sub01.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="search_layer">
+                <form name="search" method="get" action="#">
+                    <div class="search_box">
+                        <fieldset>
+                            <legend>검색</legend><!--제목/한번밖에 쓸수없다-->
+                            <label><input class="search_on" type="text" placeholder="검색어를 입력해주세요" ></label>
+                            <a href=# title="검색"><img class="search_btn" src="./images/icon/search_box.png" alt="검색버튼"></a>
+                        </fieldset>
+                        <dl class="search_txt">
+                            <dt>추천</dt>
+                            <dd><a href="#" title="루미비모이스쳐">&#35;루미비모이스쳐</a></dd>
+                            <dd><a href="#" title="허니클로우">&#35;허니글로우</a></dd>
+                            <dd><a href="#" title="젤세미립스틱">&#35;젤세미립스틱</a></dd>
+                            <dd><a href="#" title="차콜마스트">&#35;차콜마스크</a></dd>
+                            <dd><a href="#" title="크로마 퓨전 아이섀도">&#35;크로마퓨전 아이섀도</a></dd>
+                            <dd><a href="#" title="아쿠아 모이스쳐">&#35;아쿠아 모이스쳐</a></dd>
+                        </dl>
+                    </div>
+                    <div class="close_box">
+                    <button type="button" class="search_close">CLOSE<div class="search_close_icon"></div></button>     
+                    </div>
+                </form>   
+            </div>
+
+        </header>
+        <!--//Header영역-->
+
+        <!--figure Mainbanner영역-->
+        <figure id="main_slide">
+            	<div class="banner_btn">
+		          <a href="javascript:;" class="prevBtn"><img src="./images/icon/prev.png"></a>
+		          <a href="javascript:;" class="nextBtn"><img src="./images/icon/next.png"></a>
+	           </div>
+	           <ul class="banner_img">
+                    <li class="silde_list">
+                        <a href="#" title="립스틱"><img id="main01" src="./images/main/1.jpg" alt="new 트루 디멘션 쉬어 립스틱"></a>
+                    </li>
+                    <li class="silde_list" >
+                        <a href="#" title="파운데이션"><img id="main03" src="./images/main/4.jpg" alt="new 트루 디멘션 쉬어 립스틱"></a>
+                    </li>
+                    <li class="silde_list"> 
+                        <a href="#" title="립스틱"><img id="main02" src="./images/main/2.jpg" alt="젤 세미 립스틱"></a>
+                    </li>
+                    <li class="silde_list">
+                        <a href="#" title="파운데이션"><img id="main03" src="./images/main/3.jpg" alt="new 트루 디멘션 쉬어 립스틱"></a>
+                    </li>
+	           </ul>
+	           <ul class="banner_circle"></ul>
+        </figure>
+        <!--//figure Mainbanner영역-->
+        
+        <!--Contents영역-->
+        <div id="Contents">
+                        
+            <!--  new_product영역 -->  
+            <div id="new_product">
+                <div class="tit">
+                    <h2><img src="./images/contens/new_product/New_tit.png" alt="베스트 제품"></h2>
+                    <span>따끈따끈한 신제품 출시</span>
+                    <div class="n"></div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="prd_info">
+                            <a href="#" title=""><img src="./images/contens/new_product/product_01.jpg" alt=""></a>
+                            <div class="prd_txt">
+                                <span class="prd_name">루미비 모이스쳐크림</span>
+                                <p class="prd_price">62,000원</p>
+                            </div>
+                        </div>
+                        <p class="new_tit">은은하게 건강한 빛을 뿜어내는<br>흑진주의 비밀을 담다</p>
+                    </li>
+                    <li>
+                        <div class="prd_info">
+                            <a href="#" title=""><img src="./images/contens/new_product/product_02.jpg" alt=""></a>
+                            <div class="prd_txt">
+                                <span class="prd_name">루미비인텐시브 세럼</span>
+                                <p class="prd_price">78,000원</p> 
+                            </div>
+                            <div class="quck"></div>
+                        </div>
+                        <p class="new_tit">지친 피부에 생기를 불어넣어<br>광채를 선사하는 세렴</p>
+                    </li>
+                    <li>
+                        <div class="prd_info">
+                            <a href="#" title=""><img src="./images/contens/new_product/product_03.jpg" alt=""></a>
+                            <div class="prd_txt">
+                                <span class="prd_name">허니 글로우피니셔</span>
+                                <p class="prd_price">44,000원</p>
+                            </div>
+                        </div>
+                        <p class="new_tit">기초의 마무리<br>빛나는 피부의 시작</p>
+                    </li>
+                </ul>
+            </div>           
+            <!--  //new_product영역 -->  
+            
+            <!--  middle_banner영역 -->            
+            <div id="middle_banner">
+                <a class="more" href="#" title="보러가기"><img src="./images/contens/middle_banner/more_icon.png" alt="보러가기"></a> 
+                <div class="imgs">
+                    <div class="img1">
+                    <img src="./images/contens/middle_banner/img_1.png" alt="꽃잎1">
+                    </div>
+                    <div class="img2">
+                    <img src="./images/contens/middle_banner/img_2.png" alt="꽃잎2">
+                    </div>
+                    <div class="img3">
+                    <img src="./images/contens/middle_banner/img_3.png" alt="모델사진1">
+                    </div>
+                    <div class="img4">
+                    <img src="./images/contens/middle_banner/img_4.png" alt="꽃잎3">
+                    </div>
+                    <div class="img5">
+                    <img src="./images/contens/middle_banner/img_5.png" alt="꽃잎4">
+                    </div>
+                    <div class="img6">
+                    <img src="./images/contens/middle_banner/img_6.png" alt="모델사진2">
+                    </div>
+                    <div class="img7">
+                    <img src="./images/contens/middle_banner/img_7.png" alt="모델사진진3">
+                    </div>
+                </div>
+				<div class="middle_tit">
+				    <p>기초의 마무리, 빛나는 피부의 시작</p>
+                    <span><strong>허니 글로우 피니셔</strong></span>
+				</div>
+                <div class="middle_product">
+					<div id="middle_texts">
+						<div id="txt1" class="middle_txt"></div>
+                        <div id="txt2" class="middle_txt"></div>
+                        <div id="txt3" class="middle_txt"></div>
+                        <div id="txt4" class="middle_txt"></div>
+                        <div id="txt5" class="middle_txt"></div> 
+                        <div id="txt6" class="middle_txt"></div>
+					</div>
+                </div>
+            </div>
+            <!--  //middle_banner영역 -->
+
+            <!--  best_product영역 -->
+            <div id="best_product">
+                <div class="tit">
+                    <h2><img src="./images/contens/best_product/best_tit01.png" alt="신제품"></h2>
+                    <span>지금 이순간 가장 사랑 받고 있는 제품은?</span>
+                </div>
+                <div class="best_wrap">
+                    <ul class="best_ul">
+                        <li class="best_list">
+                            <ul class="best_contents">
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new01.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">사회공헌 파워풀핑크</span>
+                                            <p class="prd_price">28,000원</p>
+                                            <p class="on">
+                                                <span class="prd_tit">사회공헌 활동 핑크아웃<br>파워풀핑크</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new02.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">허니 글로우 세트</span>
+                                            <p class="prd_price">100,000원</p>
+                                            <p class="on">
+                                                <span class="prd_tit">허니글로우 + 미니마이저<br>출시기념 한정세트</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new03.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">크로마퓨전 아이섀도</span>
+                                            <p class="prd_price">10,000원</p>
+                                            <p class="on">
+                                                <span class="prd_tit">선명한 발색력과 부드러운 발림성<br>오랫 동안 지속되는 컬러감</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new04.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">허니 글로우 피니셔</span>
+                                            <p class="prd_price">44,000원</p>
+                                             <p class="on">
+                                                <span class="prd_tit">빛나는 피부의 시작<br>내 피부 보다 더 자연스러운 톤업</span>
+                                                 <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                           
+                                        </div>
+                                    </div>
+                                </li>    
+                            </ul>
+                        </li>
+                        <li class="best_list">
+                            <ul class="best_contents">
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new05.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">아쿠아 모이스쳐라이져</span>
+                                            <p class="prd_price">44,000원</p>
+                                             <p class="on">
+                                                <span class="prd_tit">바다가 전달하는 보습으로<br>마르지 않는 촉촉한 피부</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                           
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new06.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">딥 클렌징 차콜 마스크</span>
+                                            <p class="prd_price">26,000원</p> 
+                                            <p class="on">
+                                                <span class="prd_tit">자석처럼 모공 속 노페물를 쏙<br>뽑아 주는 마스크</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                       
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new07.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">누리샤인 플러스 립글러스</span>
+                                            <p class="prd_price">23,000원</p>
+                                             <p class="on">
+                                                <span class="prd_tit">풍부한 수분 공급으로<br>내 입술의 윤기가 촤르르</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                           
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new08.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">파이팅 모이스처라이저</span>
+                                            <p class="prd_price">40,000원</p>
+                                            <p class="on">
+                                                <span class="prd_tit">하루 종일 피부를 촉촉하고<br>부드럽게 가꿔준다</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                            
+                                        </div>
+                                    </div>
+                                </li>    
+                            </ul>
+                        </li>
+                        <li class="best_list">
+                            <ul class="best_contents">
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new09.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">앳 플레이 매트 리퀴드 립</span>
+                                            <p class="prd_price">22,000원</p>
+                                             <p class="on">
+                                                <span class="prd_tit">가볍고 보송한 마무리감<br>입술 피부 컨디셔닝</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>                                           
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new10.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">퍼펙팅 컨실러언더 코렉터</span>
+                                            <p class="prd_price">20,000원</p> 
+                                            <p class="on">
+                                                <span class="prd_tit">가볍고 부드러운 질감의 포뮬러<br>피부보호 피타민E</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new11.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">루미비 모이스처 크림</span>
+                                            <p class="prd_price">62,000원</p>
+                                            <p class="on">
+                                                <span class="prd_tit">은은하게 건강한 빛을<br>뽐아 내는 흑진주의 비밀</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_info">
+                                        <a href="#" title=""><img src="./images/contens/best_product/new12.jpg" alt=""></a>
+                                        <div class="prd_txt">
+                                            <span class="prd_name">더 스카이 바디 로션</span>
+                                            <p class="prd_price">22,000원</p>
+                                            <p class="on">
+                                                <span class="prd_tit">가볍게 하늘 위를 나르는 듯한<br>즐거움을 선사하는 향</span>
+                                                <a href="#" title="보러가기"><span class="prd_btn">보러가기</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>    
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="prev"><img src="./images/icon/prev_btn_off.png" alt="prev"></a>
+                    <a href="#" class="next"><img src="./images/icon/next_btn_off.png" alt="next"></a>
+                </div>
+            </div>
+            <!--  //best_product영역 -->
+            
+            <!--  video_contents영역 -->
+			<div id="video_contents">
+				<div class="video_tit">
+					<h2 class="en">Shine</h2>
+					<p class="txt">
+						<span>젤세미립스틱</span>
+					</p>
+				</div>
+                <video poster="./images/contens/video/poster.jpg" controls="controls" >
+					<source src="images/contens/video/GelLip.mp4" type="video/mp4">
+				</video>
+				<div class="video_info">
+					<p class="txt_info">
+					<strong>젤세미,</strong>
+					<br>
+						"바를수록 선명함은 기본.
+					<br>
+						고감도 발색과 벨벳 텍스처
+					<br>
+						촉촉한 립 연출" 
+					</p>
+				</div>
+			</div>
+            <!--  //video_contents영역 -->
+                        
+            <!--  insta영역 -->
+            <div id="insta">
+                <div class="tit">
+                    실시간 행복한
+                    <h2 class="en">Mary Kay</h2>
+                </div>
+                <ul>
+                    <li>
+                       <a href="#" title="인스타로이동"><img src="./images/contens/instar/1.png" alt="인스타그램사진"><span class="insta_ov">#Mary kay</span></a>
+                    </li> 
+                    <li>
+                       <a href="#" title="인스타로이동"><img src="./images/contens/instar/2.png" alt="인스타그램사진"><span class="insta_ov">#Mary kay</span></a>
+                    </li> 
+                    <li>
+                       <a href="#" title="인스타로이동"><img src="./images/contens/instar/44.jpg" alt="인스타그램사진"><span class="insta_ov">#Mary kay</span></a>
+                    </li>  
+                    <li>
+                       <a href="#" title="인스타로이동"><img src="./images/contens/instar/666.jpg" alt="인스타그램사진"><span class="insta_ov">#Mary kay</span></a>
+                    </li>
+					<li>
+                       <a href="#" title="인스타로이동"><img src="./images/contens/instar/77.jpg" alt="인스타그램사진"><span class="insta_ov">#Mary kay</span></a>
+                    </li>
+                    <li>
+                       <a href="#" title="인스타로이동"><img src="./images/contens/instar/55.jpg" alt="인스타그램사진"><span class="insta_ov">#Mary kay</span></a>
+                    </li>
+                    <li>
+                       <a href="#" title="인스타로이동"><img src="./images/contens/instar/6.png" alt="인스타그램사진"><span class="insta_ov">#Mary kay</span></a>
+                    </li> 
+                </ul>
+            </div>
+            <!--  //insta영역 -->
+            
+            <!--bottom_banner영역 -->
+            <div id="bottom_banner">
+                <div class="bottom_wrap">
+                    <div class="bottom_tell bt">
+                        <dl>
+                            <dt>CS Center<span class="bottom_tit"> 토/일요일, 공휴일 휴무</span></dt>
+                            <dd class="bottom_txt">TEL<br><span class="bottom_wtxt">02-982-7421</span></dd>
+                            <dd class="tell_stxt">평일 10:00 ~ 18:00<br>점심 12:30 ~ 13:30</dd>
+                        </dl>
+                        <div class="bottom_img">
+                            <img src="./images/contens/bottom_banner/img_tel.png" >
+                        </div>
+                       
+                    </div>
+                    <div class="bottom_qna bt">
+                        <dl>
+                            <dt>Q&amp;A<span class="bottom_tit"> 회원님들에게 친절하게 답변해드립니다</span></dt>
+                            <dd class="bottom_txt">Marykey에 대해<br><span class="bottom_wtxt">무엇이든 물어보세요</span></dd>
+                            <dd><a href="#" title="문의하기"class="qna_btn">문의하기</a></dd>
+                        </dl>
+                        <div class="bottom_img">
+                            <img src="./images/contens/bottom_banner/img_qna.png">
+                        </div> 
+                    </div>
+                    <div class="bottom_notice bt">
+                        <dl>
+                            <dt>Notice</dt>
+                            <dd><a href="#" title="보러가기">[필독] 결제창 오류 문의 안내글.</a><span>2018.06.18</span></dd>
+                            <dd><a href="#" title="보러가기">메리케이 짝퉁, 모조품 주의하시기 바랍니다.</a><span>2018.06.31</span></dd>
+                            <dd><a href="#" title="보러가기">포인트 사용방법 안내공지.</a><span>2018.07.15</span></dd>
+                            <dd><a href="#" title="보러가기">메리케이 뷰티컨설턴트 판매실명제 실시.</a><span>2018.07.18</span></dd>   
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!--//bottom_banner영역 -->
+        </div>
+        <!--//Contens영역--> 
+        
+        <!-- footer영역-->
+        <footer>
+            <div id="footer_wrap">
+                <div id="footer_top">
+                    <div class="footer_logo">
+                        <h1><img src="./images/logo_white.png"></h1>
+                    </div>
+                    <div class="information">                 
+                        <div><a href="#" title="회사소개" class="bubu">화사소개</a></div>
+                        <div><a href="#" title="이용약관">이용약관</a></div>
+                        <div><a href="#" title="개인정보취급방침">개인정보취급방침</a></div>
+                        <div><a href="#" title="주문가이드">주문가이드</a></div>
+                    </div>
+                    <ul class="sns">
+                        <li>
+                            <a href="https://www.instagram.com/marykayus/" target="_blank" title="인스타그램"><img src="./images/icon/sns01_on.png" alt="인스타그램"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/pg/marykaykorea/" target="_blank" title="페이스북"><img src="./images/icon/sns02_on.png" alt="페이스북"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/marykaykorea"  target="_blank" title="유튜브"><img src="./images/icon/sns03_on.png" alt="유뷰브"></a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="footer_info">
+                    <p>회사명 : (주)메리케이</p> <span> | </span>
+                    <p>대표자 : 김희나</p><span> | </span>
+                    <p>주소 : 서울특별시 강남구 테헤란로87길36 12층</p><br>
+                    <p>전화 : 02-982-7421</p><span> | </span>
+                    <p>팩스 : 02-982-7421</p><span> | </span>
+                    <p>사업자등록번호 : 120-86-09013</p>
+                    <p>통신판매업신고번호 :2014-인천남구-0241호</p>
+                    <a href="#" onclick="javascript:window.open('http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=120-86-09013','공정거래위원회','width=750, height=700;');">[사업자정보확인]</a> <br>
+                    <p>개인정보관리책임자 : 이소형 </p><span> | </span>
+                    <p>이메일 : <a href="mailto:mire3322@naver.com">mire3322@naver.com</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer영역-->       
+    </div>
+</body>
+</html>
