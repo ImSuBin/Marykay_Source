@@ -1,0 +1,113 @@
+
+/*top_banner*/
+#top_banner{position: relative;width:100%;margin: 0 auto;overflow: hidden;margin-top: 1%;margin-bottom: 2%;}
+#top_banner img{width:100%;height:100%;}
+#top_banner .top_tit{position: absolute;top: 0;left: 0; display: inline-block;width:100%;height: 100%;background-color: rgba(38, 38, 38, 0.3);text-align: center;}
+#top_banner .top_tit h2{margin-top: 5%;font-size: 4em; font-weight: 700;color: #fff;}
+
+/*tab_wrap */
+#product_wrap{width:80%;overflow: hidden;margin: 0 auto;padding:0 20px;margin-bottom: 2%;}
+
+
+
+/*tabs layot*/
+#tabs {  width: 90%;overflow: hidden; margin:0 auto;}
+#tabs .tab_list{ width:25%;background-color:#ededed;border-bottom:1px solid  #a31f1f;border-top: 3px solid transparent;box-sizing: border-box;}
+#tabs .tab_list a {text-align:center; display:block; font-size: 1.5em;padding:17px; line-height: 16px; color:#bbb;}
+
+/*tab_contents laout*/
+.tab_contents{width:80%;overflow: hidden;margin: 0 auto;background-color:#FFF;padding: 2%;}
+.tab_contents .prd_more{width:7%;margin: 0 auto;}
+.tab_contents .prd_more span{padding: 10%;font-size: 1.5em; border: 1px solid #333;border-radius: 10%; cursor: pointer;}
+.tab_contents .prd_more span:hover{background-color:#b4b4b4;color: #fff;}
+#makeup .prd_more span:hover{background-color:#f7c1ce;color: #fff;}
+#makeuptool .prd_more span:hover{background-color:#e4c9f8;color: #fff;}
+
+.tab_tit {width: 80%;margin: 0 auto;overflow: hidden;}
+.tab_tit h2 {display: inline-block;font-weight: normal;font-size:2.5em;text-align: center;width: 30%; padding: 2%;background-color: #ddd;}
+.tab_tit span {display: inline-block;font-size:1.8em;text-align: center;width: 65%;}
+.tab_tit img{width: 100%;text-align: center;border: 1px solid #ddd;}
+.prd_name{font-size: 1.5em;}
+.prd_price{font-size: 1.3em;}
+.prd_ul{width: 80%;margin: 0 auto;overflow: hidden;text-align:center;margin-top: 2%;margin-bottom:2%;}
+.prd_box {position: relative;overflow: hidden;width: 30.5%;margin: 0 auto;margin: 1%; float: left;border: 1px solid #ddd;}
+.prd_box img{width:60%;height:auto;}
+.prd_box .prd_txt {display: inline-block;width:40%;float: right;margin-top:22%;}
+
+
+.on{position: absolute;top: 0%;left: 0%;bottom: 0%; width: 100%;height:100%;display: inline-block;background-color: rgba(255, 255, 255, 0.8);text-align: center;border: 1px solid #b4b4b4;overflow: hidden;box-sizing: border-box; display: none;}
+.on span{display: inline-block;margin-top:10%;font-size:1rem;color:#333;font-weight:600;}
+.on span.prd_tit{padding: 1%;}
+.on span.prd_btn{width: 90%;margin: 0 auto;margin-top:15%;padding: 1%;border: 1px solid #333;font-weight:100;}
+.on span.prd_btn:hover {background-color:#b4b4b4; color: #fff; }
+.prd_box:hover .on{ display: block;animation: prdleft 1s linear;}
+.prd_ul .prd_box:nth-child(3n+1):hover .on {animation: prdright 1s linear;}
+.prd_ul .prd_box:nth-child(3n+2):hover .on{animation: prdtop 1s linear;}
+.prd_ul .prd_box:nth-child(3n+8):hover .on{animation: prdbottom 1s linear;}
+
+
+@keyframes prdleft {
+	 0%{
+        left: 100%;
+    }  
+ 
+    100%{
+        left: 0%; 
+    }    
+         
+}
+@keyframes prdright {
+	 0%{
+        left: -100%;
+    }  
+ 
+    100%{
+        left: 0%; 
+    }    
+         
+}
+@keyframes prdtop {
+	 0%{
+        top:-100%;
+    }  
+ 
+    100%{
+        top:0%; 
+    }    
+         
+}
+@keyframes prdbottom {
+	 0%{
+        top:200%;
+    }  
+ 
+    100%{
+        top:0%; 
+    }    
+         
+}
+
+/*#first_on .prd_ul .prd_box:nth-child(5):hover .on{animation: prdbottom 0.8s linear;}*/
+
+#suncare .tab_tit h2 {background-color: #ffe100;}
+#suncare .prd_box .on{border: 1px solid #4cc5e2;}
+#suncare .prd_box .on span{color:#000000;}
+#suncare  .prd_box .on span.prd_btn:hover {background-color:#4cc5e2; color: #fff; }
+
+
+#makeup .tab_tit h2 {background-color: #fd9bd5;}
+#makeup .prd_box .on{border: 1px solid #f7c1ce;}
+#makeup .prd_box .on span{color:#000000;}
+#makeup .prd_box .on span.prd_btn:hover {background-color:#f7c1ce; color: #fff; }
+
+#makeuptool .tab_tit h2 {background-color: #d8a6f5;}
+#makeuptool .prd_box .on{border: 1px solid #e4c9f8;}
+#makeuptool .prd_box .on span{color:#000000;}
+#makeuptool .prd_box .on span.prd_btn:hover {background-color:#e4c9f8; color: #fff; }
+
+
+
+/*tabs active style*/
+#tabs li.active {background:#FFF; border-top:3px solid #a31f1f;border-left:1px solid  #a31f1f;border-right:1px solid #6d1515;border-bottom: none;box-sizing: border-box;}
+#tabs li.active a { color:#333333;}
+#tabs li.active a i {color: #a31f1f;}
